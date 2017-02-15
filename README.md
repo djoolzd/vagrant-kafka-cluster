@@ -3,15 +3,15 @@ vagrant-kafka
 
 Vagrant configuration to setup a partitioned Apache Kafka installation with clustered Apache Zookeeper.
 
-This configuration will start and provision six CentOS6 VMs:
+This configuration will start and provision 4 CentOS6 VMs:
 
-* Three hosts forming a three node Apache Zookeeper Quorum (Replicated ZooKeeper)
+* one host forming a one node Apache Zookeeper
 * Three Apache Kafka nodes with one broker each
 
 Each host is a Centos 6.6 64-bit VM provisioned with JDK 8 and Kafka 0.9.0.1. 
 
 
-Here we will be using the verion of Zookeeper that comes pre-packaged with Kafka. This will be Zookeeper version: 3.4.6 for the version of Kafka we use. 
+Here we will be using the version of Zookeeper that comes pre-packaged with Kafka. This will be Zookeeper version: 3.4.6 for the version of Kafka we use. 
 
 Prerrequisites
 -------------------------
@@ -29,9 +29,7 @@ Here is the mapping of VMs to their private IPs:
 
 | Name        | Address    |
 |-------------|------------|
-|zookeeper1   | 10.30.3.2  |
-|zookeeper2   | 10.30.3.3  |
-|zookeeper3   | 10.30.3.4  |
+|zookeeper1   | 10.30.3.2  | |
 |broker1      | 10.30.3.30 |
 |broker2      | 10.30.3.20 |
 |broker3      | 10.30.3.10 |
