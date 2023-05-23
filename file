@@ -1,0 +1,11 @@
+const blogSchema = new Schema({
+  idPnODH: Number, // String is shorthand for {type: String}
+  idenpn: Number,
+  idalter: Number,
+  codigoValidez : String,
+  tipoPersona : String,
+  autorGrabacion : String
+  roles: [{ codigoRol: String, date: Date }],
+  datosIdentificativos: { numeroDocumentoIdentidad: String, datosPersonaFisica: {nombre :String, primerAppelido : String,segundoAppelido: String, codigoGenero : String, codigoNivelIngresos :String}},
+  datosContactoCliente : {direccionPrincipal : {tipoVia : String, nombreVia : String , numeroVia: String, codigoPostal: String, nombrePoblacion :String}, email: String, telefono: String}
+        )
